@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shanmugamani V | HSE Officer</title>
+
+    <style>
+      .profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #071e3d, #0b5fa5);
+            color: white;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #8ee8ff;
+        }
+
+        .hero {
+            min-height: 90vh;
+            align-items: center;
+            padding: 60px 8%;
+            color: white;
+            background:
+    linear-gradient(rgba(7, 30, 61, 0.78), rgba(8, 127, 140, 0.70)),
+    url("./Oil&gas.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #9be8ff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+      .hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-name {
+    text-align: left;
+}
+
+.hero-name h1 {
+    margin: 0;
+}
+
+.hero-name h2 {
+    margin: 5px 0 0;
+}
+
+.hero-description {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+        .badge {
+            display: inline-block;
+            background: #ffffff22;
+            border: 1px solid #ffffff55;
+            padding: 10px 16px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: white;
+            color: #07558e;
+        }
+
+        .btn.dark {
+            background: #06284d;
+            color: white;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #073b68;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .current-job {
+            background: linear-gradient(135deg, #06284d, #087f8c);
+            color: white;
+            border-radius: 18px;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 10px 30px #0002;
+        }
+
+        .current-job h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .current-job .location {
+            color: #a7efff;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .job {
+            background: white;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-left: 5px solid #087f8c;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px #00000012;
+        }
+
+        .job h3 {
+            color: #073b68;
+            margin-bottom: 5px;
+        }
+
+        .job .date {
+            color: #087f8c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill {
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            color: #073b68;
+            background: white;
+            padding: 14px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+}
+
+      .skill:hover {
+           transform: translateY(-5px);
+           background: #087f8c;
+           color: white;
+}
+
+.skill:active {
+    transform: scale(0.96);
+}
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .certificate {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #00000010;
+        }
+
+        .certificate h3 {
+            color: #073b68;
+            margin-bottom: 8px;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .edu-box {
+            background: white;
+            padding: 22px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px #00000010;
+        }
+
+        .contact {
+            background: #071e3d;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact a {
+            color: #9be8ff;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #041326;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .top-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #087f8c;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px 8px;
+            }
+
+            .hero {
+                min-height: 85vh;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+ /* INTERACTIVE SKILLS */
+
+.skill {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #087f8c;
+    color: white;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0008;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.popup-content {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: 18px;
+    padding: 30px;
+    position: relative;
+}
+
+.popup-content h2 {
+    color: #073b68;
+    margin-bottom: 20px;
+}
+
+.popup-content h3 {
+    color: #087f8c;
+    margin-top: 18px;
+}
+
+.popup-content ul {
+    padding-left: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+/* ABOUT ME PROFESSIONAL DESIGN */
+
+#about {
+    background: #f4f8fb;
+    padding: 80px 8%;
+}
+
+#about .section-title {
+    margin-bottom: 45px;
+}
+
+.about {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-left: 5px solid #087f8c;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    #about {
+        padding: 60px 5%;
+    }
+
+    .about {
+        padding: 25px;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+      /* PROFESSIONAL EXPERIENCE */
+
+#experience {
+    background: #f4f8fb;
+    padding: 80px 8%;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+}
+
+.job {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    border-left: 5px solid #087f8c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.job:hover {
+    transform: translateY(-4px);
+}
+
+.job h3 {
+    color: #073b68;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+
+.job .date {
+    color: #087f8c;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.job p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    #experience {
+        padding: 60px 5%;
+    }
+
+    .job {
+        padding: 22px;
+    }
+
+    .job h3 {
+        font-size: 18px;
+    }
+}/* CURRENT ASSIGNMENT */
+
+#current {
+    padding: 80px 8%;
+    background: white;
+}
+
+.current-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #071e3d, #087f8c);
+    color: white;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.current-icon {
+    font-size: 55px;
+}
+
+.current-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0.85;
+}
+
+.current-content h3 {
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.current-content h4 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.current-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.current-content .contract {
+    font-size: 17px;
+}
+
+.current-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.current-tags span {
+    background: rgba(255,255,255,0.15);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+
+    #current {
+        padding: 60px 5%;
+    }
+
+    .current-card {
+        padding: 25px;
+        display: block;
+    }
+
+    .current-icon {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .current-content h3 {
+        font-size: 24px;
+    }
+
+    .current-content h4 {
+        font-size: 18px;
+    }
+}
+/* CERTIFICATIONS */
+#certifications {
+    background: #f4f8fb;
+    padding: 80px 8%;
+}
+
+.certificates {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.certificate {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    border-top: 4px solid #087f8c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+}
+
+.certificate h3 {
+    color: #073b68;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.certificate p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    #certifications {
+        padding: 60px 5%;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate {
+        padding: 23px;
+    }
+}
+/* EDUCATION */
+
+#education {
+    background: white;
+    padding: 80px 8%;
+}
+
+.education-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.education-card {
+    background: #f4f8fb;
+    padding: 25px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 5px solid #087f8c;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-icon {
+    font-size: 40px;
+    min-width: 55px;
+    text-align: center;
+}
+
+.education-card h3 {
+    color: #073b68;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.education-card p {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+
+    #education {
+        padding: 60px 5%;
+    }
+
+    .education-card {
+        padding: 20px;
+    }
+
+    .education-icon {
+        font-size: 32px;
+        min-width: 45px;
+    }
+
+    .education-card h3 {
+        font-size: 17px;
+    }
+}
+      
+/* PROFESSIONAL HIGHLIGHTS */
+
+#highlights {
+    background: #f4f8fb;
+    padding: 80px 8%;
+}
+
+.highlights-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.highlight-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 18px;
+    border-top: 4px solid #087f8c;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-6px);
+}
+
+.highlight-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.highlight-card h3 {
+    color: #073b68;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.highlight-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    #highlights {
+        padding: 60px 5%;
+    }
+
+    .highlight-card {
+        padding: 25px;
+    }
+}
+      /* CONTACT */
+
+#contact {
+    background: white;
+    padding: 80px 8%;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+    color: #555;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    background: #f4f8fb;
+    border-radius: 16px;
+    text-decoration: none;
+    border-left: 4px solid #087f8c;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: #eef7f9;
+}
+
+.contact-card > span {
+    font-size: 32px;
+}
+
+.contact-card h3 {
+    margin: 0 0 6px;
+    color: #073b68;
+    font-size: 18px;
+}
+
+.contact-card p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    #contact {
+        padding: 60px 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 18px;
+    }
+}
+/* NAVIGATION */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 30, 61, 0.96);
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.nav-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #9be8ff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+@media (max-width: 800px) {
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-logo {
+        margin-bottom: 12px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+        font-size: 13px;
+    }
+}/* FOOTER */
+
+footer {
+    background: #071e3d;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Shanmugamani V</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#current">Current</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+  
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-top">
+
+        <img src="./12345.jpg"
+             alt="Shanmugamani V"
+             class="profile-photo">
+
+        <div class="hero-name">
+            <h1>Shanmugamani V</h1>
+            <h2>HSE PROFESSION</h2>
+        </div>
+
+    </div>
+
+    <div class="hero-description">
+
+        <p>
+            Health, Safety & Environment professional with experience in
+            shutdown, industrial, oil & gas and construction environments.
+        </p>
+
+        <p>
+            🇶🇦 Currently working on a Qatar Shell Shutdown under KENT Contract.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am a dedicated HSE professional with a background in
+            Mechanical Engineering and professional qualifications in
+            occupational health and safety.
+        </p>
+
+        <br>
+
+        <p>
+            My experience includes site inspections, permit-to-work
+            systems, risk assessment, safety meetings, shutdown activities,
+            emergency preparedness, incident investigation and workplace
+            hazard control.
+        </p>
+
+        <br>
+
+        <p>
+            I focus on identifying unsafe acts and conditions,
+            implementing corrective actions and maintaining a safe
+            working environment for all personnel.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CURRENT JOB -->
+
+<section>
+ <h2 class="section-title">Current Assignment</h2>
+
+    <div class="current-card">
+
+        <div class="current-icon">🇶🇦</div>
+
+        <div class="current-content">
+
+            <h3>HSE Officer</h3>
+
+            <h4>Qatar Shell Shutdown</h4>
+
+            <p class="contract">
+                <strong>KENT Contract</strong> • Qatar
+            </p>
+
+            <p>
+                Providing HSE support in a shutdown environment with focus on
+                safe work practices, permit-to-work activities, site inspections,
+                hazard identification and compliance with project safety requirements.
+            </p>
+
+            <div class="current-tags">
+                <span>Shutdown Safety</span>
+                <span>HSE Support</span>
+                <span>Permit to Work</span>
+                <span>Site Safety</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</>
+    
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="timeline">
+
+        <div class="job">
+
+            <h3>HSE Officer – NSH (Hail & Ghasha Project)</h3>
+
+            <div class="date">
+                Nov 2024 – Apr 2026
+            </div>
+
+            <p>
+                • Conducted daily STARRT meetings.<br>
+                • Managed permit-to-work activities.<br>
+                • Conducted documentation audits.<br>
+                • Performed pre-work inspections.<br>
+                • Conducted routine site walkthroughs.<br>
+                • Identified unsafe acts and conditions.<br>
+                • Implemented corrective actions.<br>
+                • Maintained housekeeping, cable management and barricading.<br>
+                • Supported emergency preparedness and evacuation procedures.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>Safety Officer – Jaddarah Industrial Service</h3>
+
+            <div class="date">
+                Saudi Arabia
+            </div>
+
+            <p>
+                Shutdown and HSE support activities in industrial environments,
+                including site safety visits, activity monitoring,
+                hazard identification and corrective actions.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>Safety Officer – Hadeed Steel Company</h3>
+
+            <div class="date">
+                Jubail, Saudi Arabia
+            </div>
+
+            <p>
+                Shutdown safety activities and HSE support.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>Safety Officer – Saudi Iron & Steel / Hadeed</h3>
+
+            <div class="date">
+                Saudi Arabia
+            </div>
+
+            <p>
+                Shutdown and refractory activity safety support.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>Fire & Safety Supervisor – Royal Enfield</h3>
+
+            <div class="date">
+                Chennai, India
+            </div>
+
+            <p>
+                • Equipment safety inspections.<br>
+                • Work permit checking.<br>
+                • Safety training support.<br>
+                • Crane document verification.<br>
+                • Fire extinguisher inspections.<br>
+                • Mock drills.<br>
+                • Fire alarm and incident documentation.<br>
+                • Incident and accident investigation.
+            </p>
+
+        </div>
+
+
+        <div class="job">
+
+            <h3>Safety Supervisor – Chennai Petroleum Corporation Ltd.</h3>
+
+            <div class="date">
+                Chennai, India
+            </div>
+
+            <p>
+                Conducted safety audits and inspections,
+                supported emergency drills, identified workplace
+                hazards and maintained safety records.
+            </p>
+
+        </div>
+
+    </div>
+
+  <!-- INTERACTIVE HSE SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">HSE Skills</h2>
+
+<p style="text-align:center; margin-bottom:30px;">
+Click any skill to learn more
+</p>
+
+<div class="skills">
+
+<button class="skill" onclick="showSkill('risk')">
+Risk Assessment
+</button>
+
+<button class="skill" onclick="showSkill('ptw')">
+Permit to Work
+</button>
+
+<button class="skill" onclick="showSkill('jsa')">
+JSA / TRA
+</button>
+
+<button class="skill" onclick="showSkill('loto')">
+LOTO
+</button>
+
+<button class="skill" onclick="showSkill('confined')">
+Confined Space
+</button>
+
+<button class="skill" onclick="showSkill('height')">
+Work at Height
+</button>
+
+<button class="skill" onclick="showSkill('lifting')">
+Lifting Safety
+</button>
+
+<button class="skill" onclick="showSkill('incident')">
+Incident Investigation
+</button>
+
+<button class="skill" onclick="showSkill('fire')">
+Fire Safety
+</button>
+
+<button class="skill" onclick="showSkill('emergency')">
+Emergency Response
+</button>
+
+<button class="skill" onclick="showSkill('shutdown')">
+Shutdown Safety
+</button>
+
+<button class="skill" onclick="showSkill('training')">
+Safety Training
+</button>
+
+</div>
+
+</section>
+
+
+<!-- SKILL POPUP -->
+
+<div id="skillPopup" class="popup">
+
+<div class="popup-content">
+
+<button class="close-btn" onclick="closeSkill()">
+×
+</button>
+
+<h2 id="skillTitle"></h2>
+
+<div id="skillDetails"></div>
+
+</div>
+
+</div>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+    <h2 class="section-title">Certifications & Qualifications</h2>
+
+    <div class="certificates">
+
+        <div class="certificate">
+
+            <h3>NEBOSH IGC</h3>
+
+            <p>
+                National Examination Board in Occupational
+                Safety and Health.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>IOSH</h3>
+
+            <p>
+                Institution of Occupational Safety and Health.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>ISO 45001:2018 Lead Auditor</h3>
+
+            <p>
+                Occupational Health & Safety Management System.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>Post Diploma</h3>
+
+            <p>
+                Fire & Safety Engineering.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>Confined Space Entry</h3>
+
+            <p>
+                Confined space safety awareness and controls.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>Control of Hazardous Substance</h3>
+
+            <p>
+                Hazardous substance safety awareness.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>Fire Safety</h3>
+
+            <p>
+                Fire prevention and emergency safety.
+            </p>
+
+        </div>
+
+
+        <div class="certificate">
+
+            <h3>Environment Safety</h3>
+
+            <p>
+                Environmental safety awareness.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education">
+
+        <div class="edu-box">
+
+            <h3>B.E. Mechanical Engineering</h3>
+
+            <p>
+                Muthayammal Engineering College
+            </p>
+
+        </div>
+
+
+        <div class="edu-box">
+
+            <h3>HSC</h3>
+
+            <p>
+                BHEL Matric Higher Secondary School
+            </p>
+
+        </div>
+
+
+        <div class="edu-box">
+
+            <h3>SSLC</h3>
+
+            <p>
+                BHEL Matric Higher Secondary School
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+  
+  
+  <!-- PROFESSIONAL HIGHLIGHTS -->
+  
+<section id="highlights">
+    <h2 class="section-title">Professional Highlights</h2>
+
+    <div class="highlights-container">
+
+        <div class="highlight-card">
+            <div class="highlight-icon">🦺</div>
+            <h3>Shutdown Safety</h3>
+            <p>
+                HSE experience supporting shutdown activities in
+                industrial and oil & gas environments.
+            </p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="highlight-icon">📋</div>
+            <h3>Permit to Work</h3>
+            <p>
+                Experience with permit-to-work activities,
+                pre-work inspections and safe work practices.
+            </p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="highlight-icon">🔍</div>
+            <h3>Site Inspections</h3>
+            <p>
+                Routine site walkthroughs, hazard identification,
+                unsafe-condition reporting and corrective actions.
+            </p>
+        </div>
+
+        <div class="highlight-card">
+            <div class="highlight-icon">🚨</div>
+            <h3>Emergency Preparedness</h3>
+            <p>
+                Experience supporting emergency preparedness,
+                evacuation procedures and safety awareness.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p class="contact-intro">
+        If you would like to discuss an HSE opportunity or connect
+        professionally, feel free to reach out.
+    </p>
+
+    <div class="contact-container">
+
+        <a href="mailto:Shanmu1724@gmail.com" class="contact-card">
+            <span>📧</span>
+            <div>
+                <h3>Email</h3>
+                <p>Shanmu1724@gmail.com</p>
+            </div>
+        </a>
+
+        <a href="tel:+919952466242" class="contact-card">
+            <span>📞</span>
+            <div>
+                <h3>Phone</h3>
+                <p>+91 9952466242</p>
+            </div>
+        </a>
+
+        <a href="https://wa.me/919952466242"
+           target="_blank"
+           class="contact-card">
+            <span>💬</span>
+            <div>
+                <h3>WhatsApp</h3>
+                <p>Message me on WhatsApp</p>
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/shanmugamaniveera"
+           target="_blank"
+           class="contact-card">
+            <span>🔗</span>
+            <div>
+                <h3>LinkedIn</h3>
+                <p>Connect with me professionally</p>
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/shan_veera_17/"
+           target="_blank"
+           class="contact-card">
+            <span>📸</span>
+            <div>
+                <h3>Instagram</h3>
+                <p>@shan_veera_17</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<footer>
+
+    © 2026 Shanmugamani V | HSE Professional Portfolio
+
+</footer>
+
+
+<a href="#" class="top-btn">↑</a>
+
+
+<script>
+  function showSkill(skill) {
+
+    const title = document.getElementById("skillTitle");
+    const details = document.getElementById("skillDetails");
+    const popup = document.getElementById("skillPopup");
+
+    const skills = {
+
+        risk: {
+            title: "Risk Assessment",
+            content: `
+                <p>Systematically identifying hazards, evaluating risks and implementing suitable control measures before work begins.</p>
+
+                <h3>Key Steps</h3>
+                <ul>
+                    <li>Identify hazards</li>
+                    <li>Identify people at risk</li>
+                    <li>Evaluate risk</li>
+                    <li>Implement control measures</li>
+                    <li>Monitor and review controls</li>
+                </ul>
+            `
+        },
+
+        ptw: {
+            title: "Permit to Work",
+            content: `
+                <p>A formal system used to control hazardous work activities and ensure required precautions are in place.</p>
+
+                <h3>HSE Responsibilities</h3>
+                <ul>
+                    <li>Check permit requirements</li>
+                    <li>Verify site conditions</li>
+                    <li>Check required certificates</li>
+                    <li>Verify isolations and controls</li>
+                    <li>Monitor compliance during work</li>
+                </ul>
+            `
+        },
+
+        jsa: {
+            title: "JSA / TRA",
+            content: `
+                <p>Job Safety Analysis and Task Risk Assessment identify hazards associated with individual work activities.</p>
+
+                <h3>Key Points</h3>
+                <ul>
+                    <li>Break the job into steps</li>
+                    <li>Identify hazards</li>
+                    <li>Determine consequences</li>
+                    <li>Establish control measures</li>
+                    <li>Communicate with workers</li>
+                </ul>
+            `
+        },
+
+        loto: {
+            title: "LOTO – Lockout / Tagout",
+            content: `
+                <p>LOTO is used to prevent unexpected energization or release of hazardous energy during maintenance or servicing.</p>
+
+                <h3>Key Steps</h3>
+                <ul>
+                    <li>Identify all energy sources</li>
+                    <li>Shut down the equipment</li>
+                    <li>Isolate energy sources</li>
+                    <li>Apply locks and tags</li>
+                    <li>Release stored energy</li>
+                    <li>Verify zero energy</li>
+                    <li>Begin work safely</li>
+                </ul>
+            `
+        },
+
+        confined: {
+            title: "Confined Space",
+            content: `
+                <p>Confined-space work requires careful assessment because of hazards such as oxygen deficiency, toxic gases and restricted access.</p>
+
+                <h3>Important Controls</h3>
+                <ul>
+                    <li>Valid confined-space permit</li>
+                    <li>Atmospheric testing</li>
+                    <li>Ventilation</li>
+                    <li>Standby person</li>
+                    <li>Communication</li>
+                    <li>Rescue plan</li>
+                </ul>
+            `
+        },
+
+        height: {
+            title: "Work at Height",
+            content: `
+                <p>Work at height requires controls to prevent falls of people and objects.</p>
+
+                <h3>Controls</h3>
+                <ul>
+                    <li>Inspect access equipment</li>
+                    <li>Use suitable fall protection</li>
+                    <li>Check scaffolding</li>
+                    <li>Provide proper barricading</li>
+                    <li>Control dropped objects</li>
+                </ul>
+            `
+        },
+
+        lifting: {
+            title: "Lifting Safety",
+            content: `
+                <p>Lifting operations must be properly planned and carried out using competent personnel and suitable equipment.</p>
+
+                <h3>Key Checks</h3>
+                <ul>
+                    <li>Approved lifting plan</li>
+                    <li>Crane inspection</li>
+                    <li>Valid certificates</li>
+                    <li>Competent lifting team</li>
+                    <li>Load weight and capacity</li>
+                    <li>Exclusion zone</li>
+                </ul>
+            `
+        },
+
+        incident: {
+            title: "Incident Investigation",
+            content: `
+                <p>Incident investigation helps determine what happened, why it happened and how similar incidents can be prevented.</p>
+
+                <h3>Process</h3>
+                <ul>
+                    <li>Secure the scene</li>
+                    <li>Collect evidence</li>
+                    <li>Interview witnesses</li>
+                    <li>Identify root causes</li>
+                    <li>Recommend corrective actions</li>
+                    <li>Follow up on actions</li>
+                </ul>
+            `
+        },
+
+        fire: {
+            title: "Fire Safety",
+            content: `
+                <p>Fire safety focuses on preventing fires, detecting emergencies and ensuring effective emergency response.</p>
+
+                <h3>Key Areas</h3>
+                <ul>
+                    <li>Fire extinguisher inspection</li>
+                    <li>Hot work controls</li>
+                    <li>Fire watch</li>
+                    <li>Emergency exits</li>
+                    <li>Fire alarm systems</li>
+                    <li>Emergency drills</li>
+                </ul>
+            `
+        },
+
+        emergency: {
+            title: "Emergency Response",
+            content: `
+                <p>Emergency response ensures personnel know how to respond safely during incidents and emergencies.</p>
+
+                <h3>Key Areas</h3>
+                <ul>
+                    <li>Emergency procedures</li>
+                    <li>Evacuation</li>
+                    <li>Emergency communication</li>
+                    <li>Muster points</li>
+                    <li>First response</li>
+                    <li>Emergency drills</li>
+                </ul>
+            `
+        },
+
+        shutdown: {
+            title: "Shutdown Safety",
+            content: `
+                <p>Shutdown activities involve multiple simultaneous operations and require strong planning and coordination.</p>
+
+                <h3>HSE Focus</h3>
+                <ul>
+                    <li>Permit to work</li>
+                    <li>Isolation and LOTO</li>
+                    <li>SIMOPS coordination</li>
+                    <li>Confined-space safety</li>
+                    <li>Lifting operations</li>
+                    <li>Daily safety meetings</li>
+                </ul>
+            `
+        },
+
+        training: {
+            title: "Safety Training",
+            content: `
+                <p>Safety training helps workers understand hazards, controls and safe working practices.</p>
+
+                <h3>Examples</h3>
+                <ul>
+                    <li>Toolbox talks</li>
+                    <li>Safety inductions</li>
+                    <li>Emergency drills</li>
+                    <li>Task-specific training</li>
+                    <li>HSE awareness programs</li>
+                </ul>
+            `
+        }
+
+    };
+
+    title.innerHTML = skills[skill].title;
+    details.innerHTML = skills[skill].content;
+
+    popup.style.display = "flex";
+}
+
+
+function closeSkill() {
+
+    document.getElementById("skillPopup").style.display = "none";
+
+}
+
+
+window.onclick = function(event) {
+
+    const popup = document.getElementById("skillPopup");
+
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+
+};
+
+    // Simple welcome message
+    console.log("Welcome to Shanmugamani V's HSE Portfolio");
+
+    // Smooth navigation
+    document.querySelectorAll('nav a').forEach(link => {
+
+        link.addEventListener('click', function(e) {
+
+            const target = document.querySelector(
+                this.getAttribute('href')
+            );
+
+            if (target) {
+
+                e.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+            }
+
+        });
+
+    });
+
+</script>
+  <!-- FOOTER -->
+<footer>
+    <p>© 2026 Shanmugamani V | HSE Professional</p>
+    <p>Health, Safety & Environment | Shutdown | Oil & Gas</p>
+</footer>
+
+</body>
+</html>
